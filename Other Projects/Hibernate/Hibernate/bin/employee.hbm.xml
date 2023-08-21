@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-5.3.dtd">
+ <hibernate-mapping package="com.hibernate.model">
+	<class name="Employee" table="emp1">
+        <id name="eid">
+            <column name="id" /> 		
+        </id>
+        <property name="name">     </property>
+               
+        <!-- when db column name is not specifed it will take same name as property name -->
+       <property name="salary" >        		        
+        </property>
+        
+    </class>
+</hibernate-mapping>
